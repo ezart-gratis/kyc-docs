@@ -1,1 +1,40 @@
-#config if using MkDocs/GitBook
+site_name: KYC Documentation
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - System Overview:
+      - Architecture: system-overview/architecture.md
+      - Environments: system-overview/environments.md
+      - Tech Stack: system-overview/tech-stack.md
+  - Authentication:
+      - Roles: auth/roles.md
+      - Flows: auth/flows.md
+      - Keycloak: auth/keycloak.md
+  - Business Flows:
+      - Onboarding: business-flows/onboarding.md
+      - Document Checks: business-flows/document-checks.md
+      - Escalation: business-flows/escalation.md
+  - API:
+      - Endpoints: api/endpoints.md
+      - Integration: api/integration.md
+  - Data:
+      - Model: data/model.md
+      - Retention: data/retention.md
+  - Operations:
+      - Deployment: operations/deployment.md
+      - Monitoring: operations/monitoring.md
+      - Backup: operations/backup.md
+      - Troubleshooting: operations/troubleshooting.md
+  - Compliance:
+      - ISO Standards: compliance/iso-standards.md
+      - GDPR: compliance/gdpr.md
+      - Audit: compliance/audit.md
+  - Glossary: glossary.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+site_dir: site
+docs_dir: docs
